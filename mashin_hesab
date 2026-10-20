@@ -1,0 +1,51 @@
+
+
+from zarb import *
+from jam import *
+from menha import *
+from taghsim import *
+
+while True:
+
+    menu = input("1.+ 2.* 3./ 4.-: ")
+    while True:
+        num1= int(input("adad vared kon"))
+        num2 = int(input("adad vared kon"))
+        match menu:
+            case"1":
+                jam(adad1=num1,adad2=num2)
+                break
+            case "2":
+                zarb(num1,num2)
+                break
+            case "3":
+                tighsim(adad1=num1,adad2=num2)
+                break
+            case "4":
+                menha(num1,num2)
+                break
+
+
+
+
+
+def menha (adad1:int|float, adad2:int|float)->int|float:
+    print(adad1 - adad2)   
+
+
+
+def tighsim (adad1:int|float, adad2:int|float)->int|float:
+    print(adad1 / adad2)
+
+
+
+
+def zarb (adad1:int|float, adad2:int|float)->int|float:
+    print(adad1 * adad2)
+
+
+def jam (adad1:int|float, adad2:int|float)->int|float:
+    print(adad1 + adad2)
+    
+
+
